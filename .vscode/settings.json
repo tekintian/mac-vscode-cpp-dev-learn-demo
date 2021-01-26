@@ -3,7 +3,8 @@
     "iostream": "cpp",
     "iosfwd": "cpp",
     "ostream": "cpp",
-    "exception": "cpp"
+    "exception": "cpp",
+    "istream": "cpp"
   },
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",

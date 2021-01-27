@@ -8,6 +8,7 @@ double division(int a, int b)
     {
         throw "Division by zero condition!";
     }
+
     return a / b;
 }
 
@@ -15,6 +16,7 @@ int main(int argc, char const *argv[])
 {
     int x = 50, y = 0;
     double z = 0;
+
     try
     {
         z = division(x, y);

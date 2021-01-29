@@ -2,6 +2,19 @@
 
 mac vscode c++ development and learn demo
 
+## clang 开发环境安装
+
+```shell
+xcode-select --install
+```
+
+## vscode 环境变量
+
+${file}  文件全路径包括扩展名
+${fileDirname} 文件目录名称
+${fileBasenameNoExtension}  基础文件名不包含扩展名
+${workspaceFolder} 工作目录
+
 ## c++配置文件
 
 - vscode c++开发运行配置文件

@@ -41,5 +41,12 @@ int main(int argc, char **argv)
     assert(str != NULL);
     printf("String entered is: %s\n", str);
     */
+    printf("=========demo=========\n");
+    int a = 10, b = 20;
+    int *p = &a;
+    // p = &b;
+    printf("%p \n", &b);
+    printf("%d \n", *p);
+
     return 0;
 }

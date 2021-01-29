@@ -15,7 +15,7 @@ int main()
         v.push_back(v[i] + v[i + 1]);
     }
 
-    // for_each(v.begin(), v.end(), [](int vv) { cout << vv << " "; });
+   for_each(v.begin(), v.end(), [](int vv) { cout << vv << " "; });
 
     for(int vv:v)
     {

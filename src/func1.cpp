@@ -11,7 +11,13 @@ int main()
     cout<<"Max value is:"<<ret <<endl;
     return 0;
 }
-
+/**
+ * @brief 
+ * 
+ * @param num1 
+ * @param num2 
+ * @return int 
+ */
 int max(int num1,int num2)
 {
     return num1>num2? num1:num2;

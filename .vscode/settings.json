@@ -7,5 +7,12 @@
   "editor.codeActionsOnSave": ["source.fixAll.format", "source.fixAll.eslint"],
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
-  }
+  },
+  "doxdocgen.generic.authorEmail": "tekintian@gmail.com",
+  "doxdocgen.generic.authorName": "TekinTian",
+  "doxdocgen.generic.useGitUserEmail": true,
+  "doxdocgen.generic.useGitUserName": true,
+  "doxdocgen.file.copyrightTag": [
+    "@copyright (C){year}  Tekin.cn All Right Reserved."
+  ]
 }

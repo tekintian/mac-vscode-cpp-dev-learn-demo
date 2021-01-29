@@ -1,16 +1,30 @@
 #include <iostream>
 #include <vector>
+#include <deque>
+#include <list>
 #include <algorithm>
 
 using namespace std;
 
-void myPrint(int var){
-    cout<< var <<endl;
-}
-
-template<typename T> void tPrint(T t)
+void myPrint(int var)
 {
-    cout<< t <<endl;
+    cout << var << endl;
+}
+/**
+ * @brief 容器对象打印函数, 支持 vector , deque 
+ * 模板函数打印 vector对象
+ * 
+ * @tparam T 
+ * @param t 
+ */
+template <class T>
+void cprint(const T &t)
+{
+    for (const auto &e : t)
+    {
+        cout << e << "\n";
+    }
+    cout << endl;
 }
 
 void testVector()
@@ -44,24 +58,29 @@ void testVector()
         int var = *it;
         std::cout << "var=" << var << std::endl;
     }
-
+    std::cout << "======template func===== \n";
+    // template func
+    cprint(v);
+    std::cout << "======for_each===== \n";
     // stl提供的算法来遍历容器(必须要包含算法头文件  algorithm )
     // for_each 从容器的起始 -- 结束 逐个取出元素
-    for_each(v.begin(),v.end(), myPrint);
-    cout<<endl;
+    for_each(v.begin(), v.end(), myPrint);
+    cout << endl;
 }
-
 
 int main(int argc, char **argv)
 {
     testVector();
-    
+
     // char var[]="你好";
     // int a = 8;
     // int *p; // 定义一个int类型指针 p
     // p = &a; // 在指针变量p中存储变量a的地址
 
-    // tPrint(var);
+    vector<string> str{"aaa", "bbbb"};
+    cprint(str);
 
+    deque<int> dd(5, 10);
+    cprint(dd);
     return 0;
 }

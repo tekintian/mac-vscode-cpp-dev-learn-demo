@@ -13,12 +13,14 @@ mac vscode c++ development and learn demo
   "configurations": [
     {
       "name": "Mac",
-      "includePath": ["${workspaceFolder}/**",
+      "includePath": [
+        "${workspaceFolder}/**",
         "/usr/local/include",
         "/Library/Developer/CommandLineTools/usr/include/c++/v1",
         "/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include",
         "/Library/Developer/CommandLineTools/usr/include",
-        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"],
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"
+      ],
       "defines": [],
       "macFrameworkPath": [
         "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
@@ -61,10 +63,10 @@ mac vscode c++ development and learn demo
 
 ```json
 {
-    "c-cpp-compile-run.cpp-compiler": "/usr/bin/clang++",
-    "c-cpp-compile-run.c-flags": "-std=c11",
-    "c-cpp-compile-run.cpp-flags": "-std=c++17 -stdlib=libc++",
-    "C_Cpp.errorSquiggles": "Disabled",
+  "c-cpp-compile-run.cpp-compiler": "/usr/bin/clang++",
+  "c-cpp-compile-run.c-flags": "-std=c11",
+  "c-cpp-compile-run.cpp-flags": "-std=c++17 -stdlib=libc++",
+  "C_Cpp.errorSquiggles": "Disabled",
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": ["source.fixAll.format", "source.fixAll.eslint"],
@@ -74,15 +76,14 @@ mac vscode c++ development and learn demo
 }
 ```
 
-
 ## Coder Runner 插件自定义配置
 
 code --> preferences-->settings --> extenssion--> Run Code Configuration
 
 Edit in Settings.json
 
-~~~json
+```json
  // 将编译后的文件统一存放于项目根目录的bin文件夹中
     "c": "cd $dir && mkdir -p $workspaceRoot/bin  && gcc -std=c11 $fileName -o $workspaceRoot/bin/$fileNameWithoutExt && $workspaceRoot/bin/$fileNameWithoutExt",
     "cpp": "cd $dir && mkdir -p $workspaceRoot/bin && clang++ -std=c++17 -stdlib=libc++ -g $fileName -o $workspaceRoot/bin/$fileNameWithoutExt && $workspaceRoot/bin/$fileNameWithoutExt",
-~~~
+```

@@ -1,12 +1,8 @@
 {
-  "files.associations": {
-    "iostream": "cpp",
-    "iosfwd": "cpp",
-    "ostream": "cpp",
-    "exception": "cpp",
-    "istream": "cpp"
-  },
-  "editor.formatOnSave": true,
+  "c-cpp-compile-run.cpp-compiler": "/usr/bin/clang++",
+  "c-cpp-compile-run.c-flags": "-std=c11",
+  "c-cpp-compile-run.cpp-flags": "-std=c++17 -stdlib=libc++",
+  "C_Cpp.errorSquiggles": "Disabled",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": ["source.fixAll.format", "source.fixAll.eslint"],
   "[cpp]": {

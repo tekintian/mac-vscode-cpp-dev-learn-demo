@@ -73,3 +73,16 @@ mac vscode c++ development and learn demo
   }
 }
 ```
+
+
+## Coder Runner 插件自定义配置
+
+code --> preferences-->settings --> extenssion--> Run Code Configuration
+
+Edit in Settings.json
+
+~~~json
+ // 将编译后的文件统一存放于项目根目录的bin文件夹中
+    "c": "cd $dir && mkdir -p $workspaceRoot/bin  && gcc -std=c11 $fileName -o $workspaceRoot/bin/$fileNameWithoutExt && $workspaceRoot/bin/$fileNameWithoutExt",
+    "cpp": "cd $dir && mkdir -p $workspaceRoot/bin && clang++ -std=c++17 -stdlib=libc++ -g $fileName -o $workspaceRoot/bin/$fileNameWithoutExt && $workspaceRoot/bin/$fileNameWithoutExt",
+~~~

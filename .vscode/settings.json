@@ -3,11 +3,13 @@
   "c-cpp-compile-run.c-flags": "-std=c11",
   "c-cpp-compile-run.cpp-flags": "-std=c++17 -stdlib=libc++",
   "C_Cpp.errorSquiggles": "Disabled",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "xaver.clang-format",
   "editor.codeActionsOnSave": ["source.fixAll.format", "source.fixAll.eslint"],
   "[cpp]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
+    "editor.defaultFormatter": "xaver.clang-format"
   },
+  "editor.formatOnSave": true,
+  "clang-format.executable": "/usr/local/opt/llvm/bin/clang-format",
   "doxdocgen.generic.authorEmail": "tekintian@gmail.com",
   "doxdocgen.generic.authorName": "TekinTian",
   "doxdocgen.generic.useGitUserEmail": true,
